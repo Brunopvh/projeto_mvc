@@ -165,3 +165,8 @@ C:\Users\SESAU\Source\Repos\projeto_mvc\bin\Debug\net7.0\Microsoft.EntityFramewo
 C:\Users\SESAU\Source\Repos\projeto_mvc\bin\Debug\net7.0\Mono.TextTemplating.dll
 C:\Users\SESAU\Source\Repos\projeto_mvc\bin\Debug\net7.0\System.CodeDom.dll
 C:\Users\SESAU\Source\Repos\projeto_mvc\obj\Debug\net7.0\staticwebassets.upToDateCheck.txt
+C:\Users\SESAU\Source\Repos\projeto_mvc\bin\Debug\net7.0\x86\leptonica-1.80.0.dll
+C:\Users\SESAU\Source\Repos\projeto_mvc\bin\Debug\net7.0\x86\tesseract41.dll
+C:\Users\SESAU\Source\Repos\projeto_mvc\bin\Debug\net7.0\x64\leptonica-1.80.0.dll
+C:\Users\SESAU\Source\Repos\projeto_mvc\bin\Debug\net7.0\x64\tesseract41.dll
+C:\Users\SESAU\Source\Repos\projeto_mvc\bin\Debug\net7.0\Tesseract.dll

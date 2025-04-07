@@ -3,8 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using PdfSharpCore.Pdf;
 using PdfSharpCore.Pdf.IO;
-using System.Collections.Generic;
-using System.IO;
+
 
 namespace ProjetoMvc.Controllers
 {

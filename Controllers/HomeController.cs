@@ -37,6 +37,11 @@ namespace ProjetoMvc.Controllers
             return View("~/Views/Forms/FormularioUsuario.cshtml");
         }
 
+        public IActionResult UploadImagem()
+        {
+            return View("~/Views/Ocr/UploadImagem.cshtml");
+        }
+
         public IActionResult UsuariosCadastrados()
         {
             return RedirectToAction("Index", "UsuariosCadastrados");
