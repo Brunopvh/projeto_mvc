@@ -48,6 +48,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/SESAU/Source/Repos/projeto_mvc/Views/UsuariosCadastrados/UsuariosCadastrados.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NDYWRhc3RyYWRvc1xVc3Vhcmlvc0NhZGFzdHJhZG9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/SESAU/Source/Repos/projeto_mvc/Views/Usuario/Inserir.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xJbnNlcmlyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

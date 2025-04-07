@@ -1,0 +1,31 @@
+﻿@model IEnumerable<ProjetoMvc.Models.Usuario>
+
+@{
+    ViewData["Title"] = "Usuários Cadastrados";
+}
+
+<h2>Usuários Cadastrados</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Altura</th>
+            <th>Idade</th>
+            <th>Peso</th>
+            <th>Estado</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var usuario in Model)
+        {
+                <tr>
+                    <td>@usuario.Nome</td>
+                    <td>@usuario.Altura</td>
+                    <td>@usuario.Idade</td>
+                    <td>@usuario.Peso</td>
+                    <td>@usuario.Estado</td>
+                </tr>
+        }
+    </tbody>
+</table>

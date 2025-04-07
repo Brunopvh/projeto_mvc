@@ -13,7 +13,6 @@ namespace ProjetoMvc.Controllers
             _logger = logger;
         }
         
-
         public IActionResult Index()
         {
             // Abrir HomePage
@@ -36,6 +35,11 @@ namespace ProjetoMvc.Controllers
         public IActionResult FormularioUsuario()
         {
             return View("~/Views/Forms/FormularioUsuario.cshtml");
+        }
+
+        public IActionResult UsuariosCadastrados()
+        {
+            return RedirectToAction("Index", "UsuariosCadastrados");
         }
 
         public IActionResult Privacy()

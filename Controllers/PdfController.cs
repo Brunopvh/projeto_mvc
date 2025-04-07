@@ -23,7 +23,7 @@ namespace ProjetoMvc.Controllers
             if (pdfFile == null || pdfFile.Length == 0)
             {
                 ModelState.AddModelError("pdfFile", "Por favor, selecione um arquivo PDF.");
-                return View("Carregar");
+                return View("~/Views/Pdf/Carregar.cshtml");
             }
 
             // Cria uma lista para armazenar os arquivos gerados
