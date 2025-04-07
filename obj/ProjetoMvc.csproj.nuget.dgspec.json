@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SESAU\\source\\repos\\ProjetoMvc\\ProjetoMvc.csproj": {}
+    "C:\\Users\\SESAU\\Source\\Repos\\projeto_mvc\\ProjetoMvc.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SESAU\\source\\repos\\ProjetoMvc\\ProjetoMvc.csproj": {
+    "C:\\Users\\SESAU\\Source\\Repos\\projeto_mvc\\ProjetoMvc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SESAU\\source\\repos\\ProjetoMvc\\ProjetoMvc.csproj",
+        "projectUniqueName": "C:\\Users\\SESAU\\Source\\Repos\\projeto_mvc\\ProjetoMvc.csproj",
         "projectName": "ProjetoMvc",
-        "projectPath": "C:\\Users\\SESAU\\source\\repos\\ProjetoMvc\\ProjetoMvc.csproj",
+        "projectPath": "C:\\Users\\SESAU\\Source\\Repos\\projeto_mvc\\ProjetoMvc.csproj",
         "packagesPath": "C:\\Users\\SESAU\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SESAU\\source\\repos\\ProjetoMvc\\obj\\",
+        "outputPath": "C:\\Users\\SESAU\\Source\\Repos\\projeto_mvc\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -51,6 +51,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "ClosedXML": {
+              "target": "Package",
+              "version": "[0.95.4, )"
+            },
             "EPPlus": {
               "target": "Package",
               "version": "[8.0.1, )"
