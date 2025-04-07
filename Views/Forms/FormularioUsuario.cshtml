@@ -1,0 +1,43 @@
+﻿@{
+    ViewData["Title"] = "Formulário de Usuário";
+    var estados = new List<string>
+    {
+        "Acre (AC)", "Alagoas (AL)", "Amapá (AP)", "Amazonas (AM)", "Bahia (BA)", "Ceará (CE)", "Distrito Federal (DF)",
+        "Espírito Santo (ES)", "Goiás (GO)", "Maranhão (MA)", "Mato Grosso (MT)", "Mato Grosso do Sul (MS)",
+        "Minas Gerais (MG)", "Pará (PA)", "Paraíba (PB)", "Paraná (PR)", "Pernambuco (PE)", "Piauí (PI)",
+        "Rio de Janeiro (RJ)", "Rio Grande do Norte (RN)", "Rio Grande do Sul (RS)", "Rondônia (RO)", "Roraima (RR)",
+        "Santa Catarina (SC)", "São Paulo (SP)", "Sergipe (SE)", "Tocantins (TO)"
+    };
+}
+
+<h2>Formulário de Usuário</h2>
+
+<form asp-action="SubmitFormularioUsuario" asp-controller="Forms" method="post">
+    <div class="form-group">
+        <label for="nome">Nome</label>
+        <input type="text" class="form-control" id="nome" name="nome" required>
+    </div>
+    <div class="form-group">
+        <label for="altura">Altura</label>
+        <input type="number" step="0.01" class="form-control" id="altura" name="altura" required>
+    </div>
+    <div class="form-group">
+        <label for="idade">Idade</label>
+        <input type="number" class="form-control" id="idade" name="idade" required>
+    </div>
+    <div class="form-group">
+        <label for="peso">Peso</label>
+        <input type="number" step="0.01" class="form-control" id="peso" name="peso" required>
+    </div>
+    <div class="form-group">
+        <label for="estado">Estado</label>
+        <select class="form-control" id="estado" name="estado" required>
+            <option value="">Selecione um estado</option>
+            @foreach (var estado in estados)
+            {
+                <option value="@estado">@estado</option>
+            }
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+</form>

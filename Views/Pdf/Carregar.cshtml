@@ -1,0 +1,15 @@
+﻿<!-- Views/Pdf/Carregar.cshtml -->
+@{
+    ViewData["Title"] = "Carregar PDF";
+}
+
+<h2>Carregar PDF</h2>
+
+<form asp-action="DividirPdf" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="pdfFile">Escolha um arquivo PDF</label>
+        <input type="file" class="form-control" id="pdfFile" name="pdfFile" accept=".pdf" required />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Dividir PDF</button>
+</form>

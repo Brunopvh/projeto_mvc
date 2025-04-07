@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Exibir Planilha";
+}
+
+<h2>Selecione uma Planilha</h2>
+
+<form enctype="multipart/form-data" method="post" asp-action="ExibirPlanilha">
+    <div class="form-group">
+        <label for="ArquivoPlanilha">Escolha uma planilha Excel (XLSX)</label>
+        <input type="file" class="form-control" id="ArquivoPlanilha" name="ArquivoPlanilha" required />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Carregar Planilha</button>
+</form>
+
+@if (ViewData["Linhas"] != null)
+{
+    <h3>3 Primeiras Linhas da Planilha:</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                @foreach (var cabecalho in ViewData["Cabecalhos"] as List<string>)
+                {
+                    <th>@cabecalho</th>
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var linha in ViewData["Linhas"] as List<List<string>>)
+            {
+                <tr>
+                    @foreach (var valor in linha)
+                    {
+                        <td>@valor</td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+}
