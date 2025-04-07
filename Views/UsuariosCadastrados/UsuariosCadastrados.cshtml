@@ -14,18 +14,22 @@
             <th>Idade</th>
             <th>Peso</th>
             <th>Estado</th>
+            <th>Ações</th>
         </tr>
     </thead>
     <tbody>
         @foreach (var usuario in Model)
         {
-                <tr>
-                    <td>@usuario.Nome</td>
-                    <td>@usuario.Altura</td>
-                    <td>@usuario.Idade</td>
-                    <td>@usuario.Peso</td>
-                    <td>@usuario.Estado</td>
-                </tr>
+            <tr>
+                <td>@usuario.Nome</td>
+                <td>@usuario.Altura</td>
+                <td>@usuario.Idade</td>
+                <td>@usuario.Peso</td>
+                <td>@usuario.Estado</td>
+                <td>
+                    <a class="btn btn-warning" href="@Url.Action("Edit", "UsuariosCadastrados", new { id = usuario.Id })">Editar</a>
+                </td>
+            </tr>
         }
     </tbody>
 </table>

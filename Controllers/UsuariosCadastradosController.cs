@@ -18,5 +18,27 @@ namespace ProjetoMvc.Controllers
             var usuarios = _context.Usuarios.ToList();
             return View("UsuariosCadastrados", usuarios);
         }
+
+        public IActionResult Edit(int id)
+        {
+            var usuario = _context.Usuarios.FirstOrDefault(u => u.Id == id);
+            if (usuario == null)
+            {
+                return NotFound();
+            }
+            return View(usuario);
+        }
+
+        [HttpPost]
+        public IActionResult Edit(Usuario usuario)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Usuarios.Update(usuario);
+                _context.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(usuario);
+        }
     }
 }
