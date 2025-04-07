@@ -11,6 +11,20 @@
 </div>
 <h2>Inserir Usuário</h2>
 
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMessage"]
+    </div>
+}
+
 @if (TempData["AlertMessage"] != null)
 {
     <script>
